@@ -1,0 +1,166 @@
+@charset "ISO-8859-1";
+		* {
+            box-sizing: border-box;
+        }
+	/*PARTE HOME PAGE*/
+        .headerHome{
+            overflow: hidden;
+            background-color: rgba(100, 149, 237, 0.7);
+            padding: 20px 10px;
+            
+            margin-top: 1%;
+            margin-left: 1%;
+            margin-right: 1%;
+
+        }
+
+        #titleHeader{
+            float: left;
+            color: whitesmoke;
+            text-align: center;
+            font-family: fantasy;
+            font-size: 50px;
+            line-height: 25px;
+            margin: 3%;
+        }
+        .headerHome a{
+            text-align: center;
+            padding: 12px;
+            text-decoration: none;
+            font-size: 18px;
+            font-family: fantasy;
+        }
+        .headerHome a:hover{
+            background-color: darkseagreen;
+            color: black;
+        }
+        .containerBtn{
+            float: right;
+            margin: auto;
+            text-align: center;
+            margin: 3%;
+
+        }
+        .btnHeader{
+            background: snow;
+            margin-left: 5px;
+            border-radius: 10%;
+
+        }
+
+        .homeSection{
+            width: 100%;
+            height: 100%;
+            margin: auto;
+            background: url(../img/home3.jpg) no-repeat center top;
+            /*position: fixed;*/
+            z-index: -1;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            background-attachment: fixed;
+
+
+        }
+        .row{
+            display: flex;
+            align-items: stretch;
+            flex-wrap: wrap;
+        }
+        .cardHome{
+            flex: 40%;
+            background: rgba(255,255,255,0.7);
+            /*opacity: 70%;*/
+            flex-grow: 5;
+            padding: 5%;
+            margin: 3%;
+            text-align: center;
+
+        }
+        .cardHome h2{
+            font-size: 200%;
+            color: darkblue;
+            font-family: Impact, Charcoal, sans-serif;
+        }
+        .cardHome h3{
+
+            font-family: Impact, Charcoal, sans-serif;
+        }
+
+        .buttonHome{
+            background: cornflowerblue;
+            color: white;
+            text-align: center;
+            padding: 8px 12px;
+            border: none;
+            border-radius: 10%;
+            font-size: 18px;
+            font-family: fantasy;
+            cursor: pointer;
+        }
+        .buttonHome:hover{
+            padding: 10px 14px;
+            background: darkseagreen;
+            color: darkblue;
+        }
+
+      /*PARTE FOOTER*/
+        footer{
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: rgba(213,126,0, 0.6);
+            color: white;
+            font-family: "Open Sans";
+            text-align: center;
+            display: flex;
+            align-items: stretch;
+            flex-wrap: wrap;
+        }
+        .publicity{
+            flex:30%;
+        }
+        .footerDip{
+            flex: 30%;
+            margin-bottom: 1%;
+        }
+        .footerUt{
+            flex: 30%;
+            margin-bottom: 1%;
+        }
+        footer h3{
+            color: darkblue;
+        }
+        footer h3,h4,h5,h6{
+            margin: 1%;
+        }
+        footer a{
+            text-decoration: none;
+            cursor: pointer;
+            color: whitesmoke;
+        }
+        
+  /*Indicazioni Responsive*/      
+        @media screen and (max-width: 580px) {
+            #titleHeader {
+                float: none;
+                display: block;
+                text-align: center;
+                font-size: 40px;
+                font-style: italic;
+            }
+
+            .containerBtn {
+                display: none;
+            }
+
+            .row {
+                flex-direction: column;
+            }
+            footer{
+                position: relative;
+                flex-direction: column;
+            }
+        }

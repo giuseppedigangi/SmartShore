@@ -1,0 +1,337 @@
+@charset "ISO-8859-1";
+		/*PARTE Area Riservata Utenete*/
+		.areaUtente{
+            width: 100%;
+            height: 100%;
+            margin: auto;
+            background: url(../img/beach-chairs.jpg) no-repeat center top;
+            /*background:lightsteelblue;*/
+            z-index: -1;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        .header{
+            overflow: hidden;
+            background-color: rgba(0, 139, 139, 0.6);
+            /*padding: 10px 10px;*/
+            margin-top: 1%;
+            margin-left: 1%;
+            margin-right: 1%;
+
+        }
+
+        #titleHeader{
+
+            color: whitesmoke;
+            text-align: center;
+            font-family: fantasy;
+            font-size: 55px;
+            line-height: 25px;
+            margin: 3%;
+            padding-bottom: 2%;
+
+        }
+        .header a{
+            text-align: center;
+            padding: 10px 5%;
+    		text-decoration: none;
+    		font-size: 20px;
+            font-family: fantasy;
+            color: darkcyan;
+            cursor:pointer;
+        }
+        .header a:hover{
+            background-color: cornflowerblue;
+            color: whitesmoke;
+        }
+        .containerBtn{
+
+            margin: auto;
+            text-align: center;
+            margin-right: inherit;
+
+
+        }
+        .btnHeader{
+            background: rgba(255,255,255,1);
+            margin-left: 5px;
+            border-radius: 5%;
+
+        }
+
+        .logout a{
+
+            float: right;
+            color:#EEC41D;
+            font-size: 20px;
+
+
+        }
+         .mainUtente{
+            text-align: center;
+            background: rgba(255,255,255,0.6);
+            margin-left: 1%;
+            margin-right: 1%;
+            margin-top: 1%;
+            margin-bottom: 1%;
+            padding-bottom: 1%;
+        }
+        /*PARTE Prenotazione Utente*/
+        .prenotazione{
+            display: flex;
+            align-items: stretch;
+            flex-wrap: wrap;
+            font-size: 15px;
+            font-family: sans-serif;
+
+        }
+        .prenotazione h3,h6{
+            margin:1%;
+            color: cornflowerblue;
+        }
+        .formPostazione{
+            flex: 30%;
+            background: rgba(255,255,255,0.7);
+            padding: 2%;
+            margin: 3%;
+            text-align: center;
+        }
+        .formPrenotazione{
+            flex: 30%;
+            background: rgba(255,255,255,0.7);
+            padding: 2%;
+            margin: 3%;
+            text-align: center;
+        }
+        .labelForm{
+            margin-bottom:2%
+        }
+        .btnTurno{
+			cursor:pointer;
+        }
+        .mappaPosti{
+            background: rgba(252,197,110,0.7);
+            margin: 2%;
+            padding: 2%;
+            display: flex;
+            align-items: stretch;
+            flex-wrap: wrap;
+            margin-bottom: 2%;
+        }
+        .posto{
+            flex: 15%;
+        }
+        .mappaPosti i{
+            font-size: 50px;
+            padding-top: 10%;
+            color: green;
+        }
+        .boxMare{
+         width: 100%;
+            margin-top: 3%;
+        }
+        .btnUmbrella{
+            margin-top: 1%;
+            border: none;
+            background: whitesmoke;
+            border-radius: 3%;
+            cursor: pointer;
+        }
+        .errore{
+        color:red;
+        }
+        
+        /*PARTE Ordinazione Bar Utente*/
+        .bar{
+            display: flex;
+            align-items: stretch;
+            flex-wrap: wrap;
+        }
+        .tablink{
+            flex: 10%;
+            background-color: cornflowerblue;
+            color: white;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 10px 8px;
+            font-size: 15px;
+        }
+        .tablink:hover {
+            background-color: rgba(255,255,255,0.8);
+            color: cornflowerblue;
+        }
+        .tabContent{
+	        flex:40%;
+	        background: rgba(255,255,255,0.8);
+	        /*color: white;*/
+	        display: none;
+	        padding-top: 1%;
+	        height: auto;
+        }
+        table{
+            border-collapse: collapse;
+            font-family: "Open Sans";
+            font-size: 100%;
+            margin: auto;
+        }
+        th{
+            padding: 10px;
+            text-align: center;
+            border-bottom: 2px solid #a7c2d9;
+            border-collapse: collapse;
+            color: rgb(43, 89, 158);
+            width:70%;
+        }
+        td{
+            padding: 10px;
+            text-align: center;
+            border-collapse: collapse;
+            border-bottom: 1px solid #a7c2d9;
+        }
+        tr:nth-child(even) {
+
+        }
+        .addButton{
+            border: none;
+            background: darkcyan;
+            color: white;
+            border-radius: 2%;
+            border-width: 1px;
+            padding: 3% 7%;
+            cursor: pointer;
+            margin-right: auto;
+        }
+        .addButton:hover{
+            border: none;
+            background: #d57e00;
+            color: white;
+        }
+          .ordinazione{
+            display: flex;
+            align-items: stretch;
+            flex-wrap: wrap;
+            width:100%;
+
+        }
+        .carrello{
+            flex: 40%;
+            background: rgba(255,255,255,0.8);
+            text-align: center;
+            font-family: "Open Sans";
+        }
+        .carrelloContent{
+            width: 80%;
+            text-align: center;
+            margin: auto;
+        }
+        .tbCarrello th,td{
+            border: none;
+        }
+        .togliButton{
+            background-color: darkred;
+            color: #f5f8fb;
+            border: none;
+           border-radius: 5%;
+        }
+        .togliButton:hover{
+            background-color: #EEC41D;
+        }
+        /*Parte Storico Utente*/
+         .storico{
+            display: flex;
+            align-items: stretch;
+            flex-wrap: wrap;
+            width:96%;
+            margin: auto;
+            font-family: "Open Sans";
+
+        }
+        .storico h3{
+            text-decoration: underline;
+            color: #d57e00;
+        }
+        .listaPrenotazioni{
+            flex: 40%;
+            text-align: left;
+        }
+        .listaOrdinazioni{
+            flex: 40%;
+            text-align: left;
+        }
+        .scheda{
+            margin: 1%;
+            background: rgba(255,255,255,0.8);
+            padding-left:2%;
+
+        }
+        .riepilogo{
+			margin: 0px;
+            color: rgb(43, 89, 158);
+        }
+        @media screen and (max-width: 600px) {
+            .header{
+           padding-bottom:2%;
+            }
+            .header a {
+                float: none;
+                display: block;
+                text-align: center;
+                background: whitesmoke;
+                border-radius: 2%;
+                margin-top: 2%;
+                font-size:18px;
+                padding: 10px 5%;
+                margin-bottom:1%;
+                
+            }
+            #titleHeader{
+                font-size: 40px;
+            }
+            .logout a{
+                display: none;
+            }
+            .bar{
+                flex-direction: column;
+            }
+            .tablink{
+                border: black;
+
+                border-style: solid;
+            }
+            .ordinazione{
+                flex-direction: column;
+            }
+
+        }
+        @media screen and (max-width: 500px){
+            .posto{
+
+            }
+            .mappaPosti i{
+                font-size: 40px;
+                padding-top: 25%;
+            }
+             .btnUmbrella{
+            	font-size:9px;
+            }
+        }
+        @media screen and (max-width: 330px){
+            #titleHeader{
+                font-size: 30px;
+            }
+            .header a{
+                font-size: 20px;
+            }
+             .mappaPosti i{
+                font-size: 30px;
+                padding-top: 25%;
+            }
+            .btnUmbrella{
+            	font-size:7px;
+            }
+        }
